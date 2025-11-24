@@ -7,6 +7,8 @@ import {TransformarCampos} from "../validations/transformarDatos.mjs";
 
 const routes= express.Router();
 
+routes.get('/', (req, res) => {res.render("index");});
+
 routes.get('/dashboard', obtenerTodosLosSuperheroesController);
 
 routes.post('/heroes/agregar', TransformarCampos, CrearheroesValidationRules(), handleValidationErrors, crearNuevoSuperheroeController);

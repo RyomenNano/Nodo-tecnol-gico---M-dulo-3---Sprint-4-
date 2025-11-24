@@ -31,7 +31,7 @@
                         <button type="submit" class="bg-gray-600 hover:bg-gray-500 text-white font-semibold py-1 px-2 rounded">Editar</button>
                     </form>
                 </td>
-                <td class="px-4 py-2">
+                <td class="px-4 py-2 text-xs">
                     <form action="/heroes/<%= hero._id %>?_method=DELETE" method="POST">
                         <button type="submit" class="bg-red-700 hover:bg-red-600 text-white font-semibold py-1 px-2 rounded" onclick="return confirm('¿Seguro que querés eliminar este héroe?')">Eliminar</button>
                     </form>
